@@ -22,11 +22,12 @@ pip3 install torchvision
 Then go inside a directory (e.g. image_classification_pretrained) and build the executable:
 ```
 cd image_classification_pretrained
+python3 save_jit.py
 mkdir build
 cd build
 cmake -DCMAKE_PREFIX_PATH=~/Pytorch/libtorch/ ..
 make
-./classify ../models/traced_squeezenet_model.pt ../data/imageNetLabels.txt ../data/panda.jpg
+./classify ../traced_squeezenet_model.pt ../data/imageNetLabels.txt ../data/panda.jpg
 ```
 
 # Appendix
