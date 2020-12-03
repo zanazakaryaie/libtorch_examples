@@ -97,7 +97,7 @@ int main(int argc, char* argv[])
     torch::optim::Adam optimizer(linear_layer->parameters(), torch::optim::AdamOptions(1e-3));
 
     int batch_size = 4;
-    auto train_data_loader = torch::data::make_data_loader<torch::data::samplers::SequentialSampler>(std::move(train_dataset), torch::data::DataLoaderOptions().batch_size(batch_size).drop_last(true));
+    auto train_data_loader = torch::data::make_data_loader<torch::data::samplers::RandomSampler>(std::move(train_dataset), torch::data::DataLoaderOptions().batch_size(batch_size).drop_last(true));
 
     train(model, linear_layer, train_data_loader, optimizer, train_dataset_size);
 
