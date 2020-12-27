@@ -27,7 +27,7 @@ mkdir build
 cd build
 cmake -DCMAKE_PREFIX_PATH=~/Pytorch/libtorch/ ..
 make
-./classify ../traced_squeezenet_model.pt ../data/imageNetLabels.txt ../data/panda.jpg
+./classify ../traced_resnet_model.pt ../data/imageNetLabels.txt ../data/panda.jpg
 ```
 
 # Appendix
