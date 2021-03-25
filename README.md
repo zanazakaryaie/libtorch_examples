@@ -7,7 +7,7 @@ Follow the codes in this order:
 
 There will be other tutorials for object detection and image segmentation.
 
-# How to build?
+## How to build?
 
 First, download and unzip the pre-built version of libtorch:
 ```
@@ -30,5 +30,5 @@ make
 ./classify ../traced_resnet_model.pt ../data/imageNetLabels.txt ../data/panda.jpg
 ```
 
-# Appendix
+## Appendix
 For more details read my posts [here](http://imrid.net/?p=4403) abd [here](http://imrid.net/?p=4414).
